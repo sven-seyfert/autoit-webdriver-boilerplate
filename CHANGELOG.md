@@ -11,6 +11,17 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 ## [Unreleased]
 
+## [0.10.1] - 2024-12-17
+
+### Documented
+
+- Project version bump. [3ba60f8](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/3ba60f85addb838a2dd64fc39ec18367b3a88a54)
+- Update test results in README.md file (2024-12-17). [f2b806c](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/f2b806cc9ef15c6a2d8ed5b80d9094e948e86d35)
+
+### Fixed
+
+- Ensure InetRead usage is not using local cache. [3796eac](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/3796eac005bdf6947def557000ef4fae9d7bc2ac)
+
 ## [0.10.0] - 2024-09-21
 
 ### Changed
@@ -137,7 +148,8 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 - Initial commit with all repository data and dependencies.
 
-[Unreleased]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v0.10.0...HEAD
+[Unreleased]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v0.10.1...HEAD
+[0.10.1]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v0.10.0...v0.10.1
 [0.10.0]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v0.9.0...v0.10.0
 [0.9.0]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v0.8.0...v0.9.0
 [0.8.0]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v0.7.0...v0.8.0
