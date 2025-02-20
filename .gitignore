@@ -1,4 +1,6 @@
+*_stripped.au3
+*.log
 Au3ChangelogUpdater.exe
 BranchDistributor.au3
-main_stripped.au3
+example-chrome-log.log
 notes.txt
