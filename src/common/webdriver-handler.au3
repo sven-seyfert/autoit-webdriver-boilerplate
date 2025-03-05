@@ -140,10 +140,12 @@ Func _ResizeBrowser()
 EndFunc
 
 Func _TeardownDriver()
-    If Not $bAlreadyTeardown Then
-        _WD_DeleteSession($sSession)
-        _WD_Shutdown()
-
-        $bAlreadyTeardown = True
+    If $bAlreadyTeardown Then
+        Return
     EndIf
+
+    _WD_DeleteSession($sSession)
+    _WD_Shutdown()
+
+    $bAlreadyTeardown = True
 EndFunc
