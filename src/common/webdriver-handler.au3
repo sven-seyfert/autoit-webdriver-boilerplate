@@ -43,6 +43,8 @@ Func _SetupDriver()
             $sCapabilities = _BuildEdgeDriverCapabilities()
     EndSwitch
 
+    ClipPut($sCapabilities)
+
     $sSession = _WD_CreateSession($sCapabilities)
 
     _ResizeBrowser()
@@ -89,6 +91,7 @@ Func _BuildChromeDriverCapabilities()
     _WD_CapabilitiesAdd('args', StringFormat('--window-size=%s,%s', $mConfig.BrowserWidth, $mConfig.BrowserHeight))
     _WD_CapabilitiesAdd('args', '--no-default-browser-check')
     _WD_CapabilitiesAdd('args', '--disable-search-engine-choice-screen')
+    _WD_CapabilitiesAdd('args', '--disable-blink-features=AutomationControlled')
 
     If $mConfig.IgnoreSSLAndCerts Then
         _WD_CapabilitiesAdd('acceptInsecureCerts', True)                     ; recommended
@@ -124,6 +127,7 @@ Func _BuildEdgeDriverCapabilities()
     _WD_CapabilitiesAdd('w3c', True)
     _WD_CapabilitiesAdd('excludeSwitches', 'enable-automation')
     _WD_CapabilitiesAdd('args', StringFormat('--window-size=%s,%s', $mConfig.BrowserWidth, $mConfig.BrowserHeight))
+    _WD_CapabilitiesAdd('args', '--disable-blink-features=AutomationControlled')
 
     If $mConfig.IsHeadlessMode Then
         _WD_CapabilitiesAdd('args', '--headless')
