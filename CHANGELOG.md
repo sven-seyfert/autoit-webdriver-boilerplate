@@ -11,6 +11,22 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 ## [Unreleased]
 
+## [0.11.0] - 2025-03-05
+
+### Added
+
+- File package.json. [998f323](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/998f323c4ea829dc061f3ccdbea3d5755cb25c7f)
+- Prettier config file. [ee4d1a9](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/ee4d1a947ee05c84f559e19a399308a9d5f38b9e)
+
+### Changed
+
+- Update .gitignore file. [45e3cee](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/45e3cee261bcc07d059399da4a4ae9d5dbd46442)
+- Update LICENSE.md file (year 2025). [9d2dd87](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/9d2dd876dbfe9bde26caab2ec9b8ad5399eb680e)
+
+### Documented
+
+- Update README.md file. [f9ad577](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/f9ad5771d185b77c10a86b0309c577c8edffe777)
+
 ## [0.10.1] - 2024-12-17
 
 ### Documented
@@ -148,7 +164,8 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 - Initial commit with all repository data and dependencies.
 
-[Unreleased]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v0.10.1...HEAD
+[Unreleased]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v0.11.0...HEAD
+[0.11.0]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v0.10.1...v0.11.0
 [0.10.1]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v0.10.0...v0.10.1
 [0.10.0]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v0.9.0...v0.10.0
 [0.9.0]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v0.8.0...v0.9.0
