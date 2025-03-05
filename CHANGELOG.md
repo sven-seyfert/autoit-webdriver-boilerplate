@@ -11,6 +11,22 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 ## [Unreleased]
 
+## [0.12.0] - 2025-03-05
+
+### Added
+
+- Capability switch/option to hide chromedriver browser is been automated. [3e92c5e](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/3e92c5e80ad4e077e2cd4ebb023cc70ef1ac20fd)
+- Link for funding (sponsoring). [fa32d2e](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/fa32d2e6a71c098c8623367e72ba4d8b31adb57f)
+
+### Documented
+
+- Project version bump. [1ee32a8](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/1ee32a828294647a51e6bee76f4ae40b5378d508)
+- Update README.md file. [a870d55](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/a870d55c66ee5241ea9196a84a4c157c31393b1a)
+
+### Refactored
+
+- Apply return early pattern for 'bAlreadyTeardown' usage. [cec5468](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/cec546811173b8d1efdb098311ed1a98d251a52d)
+
 ## [0.11.0] - 2025-03-05
 
 ### Added
@@ -164,7 +180,8 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 - Initial commit with all repository data and dependencies.
 
-[Unreleased]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v0.11.0...HEAD
+[Unreleased]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v0.12.0...HEAD
+[0.12.0]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v0.11.0...v0.12.0
 [0.11.0]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v0.10.1...v0.11.0
 [0.10.1]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v0.10.0...v0.10.1
 [0.10.0]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v0.9.0...v0.10.0
