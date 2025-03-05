@@ -22,7 +22,7 @@ OnAutoItExitRegister('_TeardownDriver')
 
 Global $mConfig[]
 Global $sSession
-Global $bAlreadyTeardown
+Global $bAlreadyTeardown = False
 
 #include "common\webdriver-handler.au3"
 #include "utils\helper.au3"
@@ -58,7 +58,4 @@ Func _SetGlobalValues(ByRef $mConfig)
 
     ; Shutdown webdriver on find element error (default is True).
     $mConfig.TeardownOnFindElementError = True
-
-    ; do not change this
-    $bAlreadyTeardown = False
 EndFunc
