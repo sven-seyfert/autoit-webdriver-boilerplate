@@ -25,7 +25,8 @@ The project "autoit-webdriver-boilerplate" can be used as quick entry point for 
 
 #### *Branches*
 
-The different kinds of **examples**, are (and will be) separated in different branches of the repository. In this overview you basically can see which branch contains which example of WebDriver actions. Some examples and their code could be implemented in a shorter way, but this is made by design and follows a educational purpose.<br>
+The different kinds of **examples**, are (and will be) separated in different branches of the repository. In this overview you basically can see which branch contains which example of WebDriver actions. Some examples and their code could be implemented in a shorter way, but this is made by design and follows a educational purpose.
+
 ⚠ In case of 🔴 broken examples, I try to fix them as soon as possible. Sometimes Google restrict action on their pages, so it's not always feasible to handle all aspects quickly.
 
 | Branch                      | Description of the<br>WebDriver actions                                                                                                                  | Websites in use                                                                                                                                                     | Browser automation<br>flow (steps)                                                                                                | Test<br>Chrome                   | Test<br>Firefox                | Test<br>MSEdge                  |
