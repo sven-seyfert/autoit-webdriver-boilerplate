@@ -2,7 +2,7 @@
 #pragma compile(LegalCopyright, © Sven Seyfert (SOLVE-SMART))
 #pragma compile(ProductVersion, 0.12.0 - 2025-03-05)
 
-#AutoIt3Wrapper_AU3Check_Parameters=-d -w 1 -w 2 -w 4 -w 5 -w 6 -w 7
+#AutoIt3Wrapper_AU3Check_Parameters=-d -w 1 -w 2 -w 3 -w 4 -w 5 -w 6 -w 7
 #AutoIt3Wrapper_AU3Check_Stop_OnWarning=y
 #AutoIt3Wrapper_Icon=..\assets\icons\favicon.ico
 #AutoIt3Wrapper_Outfile_x64=..\build\main.exe
@@ -11,26 +11,17 @@
 #AutoIt3Wrapper_UseX64=y
 #Au3Stripper_Parameters=/sf /sv /mo /rm /rsln
 
-Opt('MustDeclareVars', 1)
-
 #include-once
-#include <File.au3>
-#include "..\lib\au3WebDriver\wd_helper.au3"
-#include "..\lib\au3WebDriver\wd_capabilities.au3"
-
-OnAutoItExitRegister('_TeardownDriver')
-
-Global $mConfig[]
-Global $sSession
-Global $bAlreadyTeardown = False
-
-#include "common\webdriver-handler.au3"
-#include "utils\helper.au3"
-#include "website-steps-handler.au3"
+#include ".\init.au3"
 
 _Main()
 
 Func _Main()
+    _Init()
+    If @error Then
+        Exit -1
+    EndIf
+
     _SetGlobalValues($mConfig)
 
     _GetNewestDriver()            ; get the current webdriver version of the chosen browser
@@ -47,10 +38,10 @@ Func _SetGlobalValues(ByRef $mConfig)
     $mConfig.Driver            = 'firefox' ; chrome|firefox|msedge
     $mConfig.IsHeadlessMode    = False     ; False|True
     $mConfig.IgnoreSSLAndCerts = False     ; False|True
+    $mConfig.LocatorStrategy   = Null      ; will be set in function "_SetLocatorStrategy()", default is XPath
     $mConfig.Delay             = 300       ; delay for supporting a robust waiting behavior (page load, clicks, texts etc.)
     $mConfig.BrowserWidth      = 1600      ; or 1920, etc.
     $mConfig.BrowserHeight     = 900       ; or 1080, etc.
-    $mConfig.LocatorStrategy   = Null      ; will be set in function "_SetLocatorStrategy()"
     $mConfig.BrowserMode       = 'size'    ; fullscreen|maximize|size (default is 'size' which applies .BrowserWidth and .BrowserHeight)
 
     ; This is the default installation path, change this in case it's another on your system.
