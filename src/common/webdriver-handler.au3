@@ -1,3 +1,6 @@
+#include-once
+#include "..\init.au3"
+
 Func _GetNewestDriver()
     Local Const $sDriverPath = _PathFull('..\driver')
     _WD_UpdateDriver(StringLower($mConfig.Driver), $sDriverPath)
@@ -11,7 +14,8 @@ Func _SetLogLevel()
     ; $_WD_DEBUG_Info  => logging with additional information
     ; $_WD_DEBUG_Full  => logging with full details for developers
 
-    $_WD_DEBUG = $_WD_DEBUG_Error
+    ;~ $_WD_DEBUG = $_WD_DEBUG_Error
+    $_WD_DEBUG = $_WD_DEBUG_Full
 EndFunc
 
 Func _SetLocatorStrategy(ByRef $mConfig)
@@ -148,8 +152,8 @@ Func _TeardownDriver()
         Return
     EndIf
 
+    $bAlreadyTeardown = True
+
     _WD_DeleteSession($sSession)
     _WD_Shutdown()
-
-    $bAlreadyTeardown = True
 EndFunc

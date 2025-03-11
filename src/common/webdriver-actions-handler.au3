@@ -1,3 +1,6 @@
+#include-once
+#include "..\init.au3"
+
 Func _NavigateTo($sUrl)
     _WD_Navigate($sSession, $sUrl)
     _WD_LoadWait($sSession, $mConfig.Delay)
