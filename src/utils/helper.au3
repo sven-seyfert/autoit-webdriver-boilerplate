@@ -1,3 +1,6 @@
+#include-once
+#include "..\init.au3"
+
 Func _Backslash($sPath)
     Return (StringRight($sPath, 1) == '\') ? $sPath : $sPath & '\'
 EndFunc
