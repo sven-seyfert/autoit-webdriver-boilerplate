@@ -1,4 +1,5 @@
-#include "..\selectors\elements-sel.au3"
+#include-once
+#include "..\init.au3"
 
 Func _NavigateToTextBoxes()
     _ClickElement(_CardHeadlineSelector('Elements'))
