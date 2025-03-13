@@ -11,6 +11,28 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 ## [Unreleased]
 
+## [1.0.0] - 2025-03-13
+
+### Added
+
+- File init.au3 to handle includes, global vars and init functions. 🔥 BREAKING CHANGE [7ffd07c](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/7ffd07cb5d35e2d831ca4911ed9b4c747b6d9932)
+- Additional license note for WinHttp.au3. [0d1e91c](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/0d1e91c0cb859e4bac43f816dd5a06b281127e40)
+
+### Changed
+
+- Usage of including init.au3 (branch independent change). 🔥 BREAKING CHANGE [32dc37c](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/32dc37c13dbe10d521f5d5bd6f4ab03e13aae7de)
+- Apply init.au3 include strategy for common files. [ba14dcc](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/ba14dcc4c467bd0ba570fe27cf7a559e34159183)
+- Set default debug (log) level to '$_WD_DEBUG_Error'. [062d697](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/062d697119cc59d6348617feb9097417aa585482)
+- Apply the usage of init.au3 include for page-objects. [258c3e7](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/258c3e74b490f3ce3a8611a330339a2618b28717)
+
+### Documented
+
+- Update README.md file. [eca6dd7](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/eca6dd7ec83d0d67c371ea82a98613dc0d35c9ba)
+
+### Refactored
+
+- Small variable adjustments for 'WinHttp.au3'. [46a839f](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/46a839f4d2646aa70bea1dbb7f1b3c8d90e81f91)
+
 ## [0.12.0] - 2025-03-05
 
 ### Added
@@ -180,7 +202,8 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 - Initial commit with all repository data and dependencies.
 
-[Unreleased]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v0.12.0...HEAD
+[Unreleased]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v0.12.0...v1.0.0
 [0.12.0]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v0.11.0...v0.12.0
 [0.11.0]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v0.10.1...v0.11.0
 [0.10.1]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v0.10.0...v0.10.1
