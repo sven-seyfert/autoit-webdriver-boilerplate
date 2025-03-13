@@ -2,6 +2,6 @@ Func _SearchTextareaSelector()
     Return '//textarea[@id="APjFqb"]'
 EndFunc
 
-Func _FirstSearchListItemSelector()
-    Return '//div[@id="Alh6id"]//li[1]'
+Func _GoogleSearchButtonSelector()
+    Return '(//input[@role="button" and @value="Google Suche"])[last()]'
 EndFunc

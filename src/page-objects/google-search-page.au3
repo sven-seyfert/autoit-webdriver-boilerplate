@@ -4,5 +4,5 @@
 Func _EnterSearchQuery()
     _ClickElement(_SearchTextareaSelector())
     _SetElementText(_SearchTextareaSelector(), 'AutoIt WebDriver')
-    _ClickElement(_FirstSearchListItemSelector())
+    _ClickElement(_GoogleSearchButtonSelector())
 EndFunc
