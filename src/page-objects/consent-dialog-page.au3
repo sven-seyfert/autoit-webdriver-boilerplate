@@ -1,4 +1,5 @@
-#include "..\selectors\consent-dialog-sel.au3"
+#include-once
+#include "..\init.au3"
 
 Func _ConfirmConsentDialog()
     _ClickElement(_ConsentAcceptButtonSelector())
