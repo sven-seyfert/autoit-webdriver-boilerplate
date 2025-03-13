@@ -1,8 +1,5 @@
-#include "common\webdriver-actions-handler.au3"
-#include "page-objects\autoit-de-page.au3"
-#include "page-objects\github-project-page.au3"
-#include "page-objects\golang-page.au3"
-#include "page-objects\webdriver-faq-page.au3"
+#include-once
+#include ".\init.au3"
 
 Func _Steps()
     _OpenWebsite()

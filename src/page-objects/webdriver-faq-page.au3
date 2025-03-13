@@ -1,4 +1,5 @@
-#include "..\selectors\webdriver-faq-sel.au3"
+#include-once
+#include "..\init.au3"
 
 Func _TakeScreenshotOfFaqNumberEight()
     Local Const $iFaqNumber = 8

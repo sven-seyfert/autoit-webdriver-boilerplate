@@ -1,4 +1,5 @@
-#include "..\selectors\github-project-sel.au3"
+#include-once
+#include "..\init.au3"
 
 Func _TakeScreenshotOfChangelogFile()
     _ClickElement(_ChangelogLinkSelector())

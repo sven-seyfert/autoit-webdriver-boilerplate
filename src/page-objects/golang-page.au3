@@ -1,4 +1,5 @@
-#include "..\selectors\golang-sel.au3"
+#include-once
+#include "..\init.au3"
 
 Func _TakeScreenshotOfSearchResult()
     _SetElementText(_SearchInputSelector(), 'sven-seyfert crypt')
@@ -6,4 +7,3 @@ Func _TakeScreenshotOfSearchResult()
     Sleep(250)
     _TakeElementScreenshot(_SearchResultBoxSelector())
 EndFunc
-
