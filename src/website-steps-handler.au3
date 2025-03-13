@@ -8,7 +8,7 @@ Func _Steps()
     _FillFormTextBoxes()
     _TakeScreenhotsOfFormAreas()
 
-    _Print('Automation steps completed!' & @CRLF)
+    _Print('Automation steps completed!')
     Sleep(1500)
 EndFunc
 
