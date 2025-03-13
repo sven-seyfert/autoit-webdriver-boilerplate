@@ -43,7 +43,7 @@ Func _Steps()
     _CloseTab()
     _CloseTab()
 
-    ConsoleWrite('Automation steps completed!' & @CRLF)
+    _Print('Automation steps completed!')
     Sleep(1500)
 EndFunc
 
