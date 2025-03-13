@@ -1,4 +1,5 @@
-#include "..\selectors\google-search-sel.au3"
+#include-once
+#include "..\init.au3"
 
 Func _EnterSearchQuery()
     _ClickElement(_SearchTextareaSelector())
