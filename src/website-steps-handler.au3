@@ -8,7 +8,7 @@ Func _Steps()
     _EnterSearchQuery()
     _ChooseSpecificMatch()
 
-    ConsoleWrite('Automation steps completed!' & @CRLF)
+    _Print('Automation steps completed!')
     Sleep(1500)
 EndFunc
 
