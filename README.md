@@ -146,7 +146,7 @@ Distributed under the MIT License. See [LICENSE](https://github.com/sven-seyfert
 - Thanks to the authors, maintainers and contributers of the various projects and UDFs
   - lib/au3WebDriver/wd_*.au3 by [@Danp2](https://github.com/Danp2) and [@mLipok](https://github.com/mLipok) ([License: MIT](lib/au3WebDriver/MIT.md))
   - lib/json/*.au3 by @Ward, @Jos and @TheXMan ([License: Unlicense](lib/json/Unlicense.md))
-  - lib/winHttp/*.au3 by [@dragana-r](https://github.com/dragana-r) (@trancexx) ([License: Apache-2.0](lib/winHttp/Apache-2.0.md) [^2])
+  - lib/winHttp/*.au3 by [@dragana-r](https://github.com/dragana-r) (@trancexx) ([License: Apache-2.0](lib/winHttp/Apache-2.0.md)) [^2]
 
 [^2]: See [additional license note](https://github.com/sven-seyfert/autoit-webdriver-boilerplate/blob/main/lib/winHttp/additional-license-note.txt) from Dragana R.
 
