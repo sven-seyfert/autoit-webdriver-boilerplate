@@ -38,7 +38,7 @@ The different kinds of **examples**, are (and will be) separated in different br
 
 #### *WebDriver actions function list*
 
-In file `src/common/webdriver-actions-handler.au3` you can find the following functions which should help you in terms of browser automation actions. These functions are used in the different branches and especially in the `_Steps()` function and their subfunctions (entry point of the browser automation).
+In file `.\src\common\webdriver-actions-handler.au3` you can find the following functions which should help you in terms of browser automation actions. These functions are used in the different branches and especially in the `_Steps()` function and their subfunctions (entry point of the browser automation).
 
 | Area         | Function                             | Purpose                                                                                           |
 | ---          | ---                                  | ---                                                                                               |
@@ -90,9 +90,11 @@ git clone --branch multiple-browser-tabs https://github.com/sven-seyfert/autoit-
 
 Open the project in your editor/IDE and navigate to folder `.\src`. Open `main.au3`, check and adjust the values of function `_SetGlobalValues()` and run the program. By default, in case you fulfill the [preconditions](#preconditions), the driver should start and should execute some simple webdriver actions like described in the [features](#features) section (for the specific branch).
 
-Adjust the `_Steps()` function content in `website-steps-handler.au3` to your requirements and goals, use the prepared wrapper functions in `.\src\common\webdriver-actions-handler.au3` and in as best case, you also want to follow the POM (page object model) structure like prepared too.
+Adjust the `_Steps()` function content in `.\src\website-steps-handler.au3` to your requirements and goals. Use the prepared wrapper functions in `.\src\common\webdriver-actions-handler.au3` and in as best case, you also want to follow the POM (page object model) structure like prepared too.
 
-🎬 A **video crash course** on how to use this project is available on Youtube, see playlist [WebDriver](https://www.youtube.com/playlist?list=PLDoYN-7Uor1AytcGNReTw5aqdUz1OMARR). The videos are in german, but I plan to recreate them in english too.
+🎬 A **video crash course** on how to use this project is available on Youtube, see playlist [WebDriver](https://www.youtube.com/playlist?list=PLDoYN-7Uor1AytcGNReTw5aqdUz1OMARR). The videos are **in german**, but ⚠ I plan to recreate them in english too.
+
+[![webdriver-crash-course-youtube-playlist.png](assets/images/webdriver-crash-course-youtube-playlist.png)](https://www.youtube.com/playlist?list=PLDoYN-7Uor1AytcGNReTw5aqdUz1OMARR)
 
 ## Configuration
 
@@ -103,10 +105,10 @@ Func _SetGlobalValues(ByRef $mConfig)
     $mConfig.Driver            = 'firefox' ; chrome|firefox|msedge
     $mConfig.IsHeadlessMode    = False     ; False|True
     $mConfig.IgnoreSSLAndCerts = False     ; False|True
+    $mConfig.LocatorStrategy   = Null      ; will be set in function "_SetLocatorStrategy()", default is XPath
     $mConfig.Delay             = 300       ; delay for supporting a robust waiting behavior (page load, clicks, texts etc.)
     $mConfig.BrowserWidth      = 1600      ; or 1920, etc.
     $mConfig.BrowserHeight     = 900       ; or 1080, etc.
-    $mConfig.LocatorStrategy   = Null      ; will be set in function "_SetLocatorStrategy()"
     $mConfig.BrowserMode       = 'size'    ; fullscreen|maximize|size (default is 'size' which applies .BrowserWidth and .BrowserHeight)
 
     ; This is the default installation path, change this in case it's another on your system.
@@ -119,7 +121,17 @@ EndFunc
 
 ## Contributing
 
-To be defined [...]
+I really appreciate 😀 any kind of suggestions, recommendations, ideas and of course BUG reports on GitHub via **Issues**. Don't hesitate to open up an issue and let's discuss the possibilies.
+
+Otherwise **fork** the repository (project), create a feature branch and then create a **pull request** (PR) to be merged. I try to review the PR as soon as possible.
+
+It would be great if you:
+- Try to stick to the commit schema you see in the commit history.
+- Try to structure your code as readable and clean as possible, because it's important to me to have maintainable code in the repository. However, I'll be happy to discuss these aspects with you in a PR if needed.
+- The **CHANGELOG.md** file don't has to be adjusted by you. I will add your commit(s) their by an automatism when it comes to merge the PR.
+- Don't forget to adjust the **README.md** file, in case it's necessary.
+
+Thank you for your contribution 🤝 .
 
 ## License
 
