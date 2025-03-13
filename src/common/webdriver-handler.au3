@@ -14,8 +14,7 @@ Func _SetLogLevel()
     ; $_WD_DEBUG_Info  => logging with additional information
     ; $_WD_DEBUG_Full  => logging with full details for developers
 
-    ;~ $_WD_DEBUG = $_WD_DEBUG_Error
-    $_WD_DEBUG = $_WD_DEBUG_Full
+    $_WD_DEBUG = $_WD_DEBUG_Error
 EndFunc
 
 Func _SetLocatorStrategy(ByRef $mConfig)
