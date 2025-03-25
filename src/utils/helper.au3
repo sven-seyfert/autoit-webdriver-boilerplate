@@ -20,3 +20,11 @@ Func _WriteFileBinary($sFile, $bData)
     FileWrite($hFile, $bData)
     FileClose($hFile)
 EndFunc
+
+Func _GetLoginValue($sKey)
+    Return IniRead('..\data\input\data.ini', 'LoginData', $sKey, '-')
+EndFunc
+
+Func _GetFlightValue($sKey)
+    Return IniRead('..\data\input\data.ini', 'FlightData', $sKey, '-')
+EndFunc
