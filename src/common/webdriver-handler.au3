@@ -46,8 +46,6 @@ Func _SetupDriver()
             $sCapabilities = _BuildEdgeDriverCapabilities()
     EndSwitch
 
-    ClipPut($sCapabilities)
-
     $sSession = _WD_CreateSession($sCapabilities)
 
     _ResizeBrowser()
