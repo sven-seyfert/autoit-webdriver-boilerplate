@@ -153,4 +153,8 @@ Func _TeardownDriver()
 
     _WD_DeleteSession($sSession)
     _WD_Shutdown()
+
+    If $mConfig.TeardownOnFindElementError Then
+        Exit -1
+    EndIf
 EndFunc
