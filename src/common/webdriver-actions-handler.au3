@@ -10,7 +10,7 @@ Func _OpenNewTab()
     _WD_Window($sSession, 'new', '{"type":"tab"}')
 
     Local Const $aListOfBrowserTabHandles = _GetBrowserTabHandles()
-    Local Const $iCount  = _GetCount($aListOfBrowserTabHandles)
+    Local Const $iCount  = _Length($aListOfBrowserTabHandles)
     Local Const $sHandle = $aListOfBrowserTabHandles[$iCount]
 
     _SwitchTab($sHandle)
@@ -19,7 +19,7 @@ EndFunc
 Func _PreviousTab()
     Local Const $sCurrentBrowserTabHandle = _GetCurrentBrowserTabHandle()
     Local Const $aListOfBrowserTabHandles = _GetBrowserTabHandles()
-    Local Const $iCount = _GetCount($aListOfBrowserTabHandles)
+    Local Const $iCount = _Length($aListOfBrowserTabHandles)
 
     Local $sHandle = Null
 
@@ -45,7 +45,7 @@ EndFunc
 Func _NextTab($bShouldClose = False)
     Local Const $sCurrentBrowserTabHandle = _GetCurrentBrowserTabHandle()
     Local Const $aListOfBrowserTabHandles = _GetBrowserTabHandles()
-    Local Const $iCount = _GetCount($aListOfBrowserTabHandles)
+    Local Const $iCount = _Length($aListOfBrowserTabHandles)
 
     Local $sHandle = Null
 
@@ -124,7 +124,7 @@ EndFunc
 
 Func _GetElementsTexts($sSelector)
     Local Const $aListOfElements = _FindElements($sSelector)
-    Local Const $iCount          = _GetCount($aListOfElements)
+    Local Const $iCount          = _Length($aListOfElements)
 
     Local $aListOfElementsTexts[$iCount + 1]
 
