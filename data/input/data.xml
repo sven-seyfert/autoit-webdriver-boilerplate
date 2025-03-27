@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FlugDatenSimbrief>
+	<TitleLoginData>[LoginData]</TitleLoginData>
+    <Email>test@test.com</Email>
+    <Password>testPassword</Password>
+	<TitleFlightData>[FlightData]</TitleFlightData>
+	<Airline>DLH</Airline>
+	<FlightNumber>132</FlightNumber>
+	<Depart>EDDH</Depart>
+	<Arrive>EDDM</Arrive>
+	<AircraftType>None</AircraftType>
+	<Airframe>D-AIXQ</Airframe>
+</FlugDatenSimbrief>
