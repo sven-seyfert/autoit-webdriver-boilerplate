@@ -19,7 +19,7 @@ Func _AircraftTypeSelector($sBaseType)
 EndFunc
 
 Func _AirframeSelector($sType)
-    Return StringFormat('//select[@id="type"]/option[text()="%s"]', $sType)
+    Return StringFormat('//select[@id="type"]/option[contains(text(), "%s")]', $sType)
 EndFunc
 
 Func _GenerateFlightButtonSelector()
