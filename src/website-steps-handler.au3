@@ -7,29 +7,37 @@ Func _Steps()
     _ConfirmCookieDialog()
     _ChooseLogin()
 
+    Local Const $sData = _ReadFile('..\data\input\data.xml')
+    Local Const $aData = StringSplit($sData, @CRLF, 2)
+
     Local $mLoginData[]
-          $mLoginData.Email    = _GetLoginValue('Email')
-          $mLoginData.Password = _GetLoginValue('Password')
+          $mLoginData.Email    = _GetLoginValue($aData, 'Email')
+          $mLoginData.Password = _GetLoginValue($aData, 'Password')
 
     _Login($mLoginData)
+    _SetDarkMode()
     _NavigateToNewFlight()
 
     Local $mFlightData[]
-          $mFlightData.Airline      = _GetFlightValue('Airline')
-          $mFlightData.FlightNumber = _GetFlightValue('FlightNumber')
-          $mFlightData.Depart       = _GetFlightValue('Depart')
-          $mFlightData.Arrive       = _GetFlightValue('Arrive')
-          $mFlightData.AircraftType = _GetFlightValue('AircraftType')
-          $mFlightData.Airframe     = _GetFlightValue('Airframe')
+          $mFlightData.Airline      = _GetFlightValue($aData, 'Airline')
+          $mFlightData.FlightNumber = _GetFlightValue($aData, 'FlightNumber')
+          $mFlightData.Depart       = _GetFlightValue($aData, 'Depart')
+          $mFlightData.Arrive       = _GetFlightValue($aData, 'Arrive')
+          $mFlightData.AircraftType = _GetFlightValue($aData, 'AircraftType')
+          $mFlightData.Airframe     = _GetFlightValue($aData, 'Airframe')
 
     _FillFlightInputs($mFlightData)
     _GenerateFlight()
 
-    Local Const $sRouteData = _GetGeneratedRouteData()
-    MsgBox('', 'Route', $sRouteData )
+    Local Const $sRouteData   = _GetGeneratedRouteData()
+    Local Const $sFileContent = StringFormat( _
+        '<?xml version="1.0" encoding="utf-8"?>\n' & _
+        '<FlugDatenSimbrief>\n' & _
+        '    <Route>%s</Route>\n' & _
+        '</FlugDatenSimbrief>\n', _
+        $sRouteData)
 
-    _Print('Automation steps completed!')
-    Sleep(1500)
+    _WriteFile('..\data\output\flugplan.xml', $sFileContent)
 EndFunc
 
 Func _OpenWebsite()
