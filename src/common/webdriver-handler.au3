@@ -14,7 +14,7 @@ Func _SetLogLevel()
     ; $_WD_DEBUG_Info  => logging with additional information
     ; $_WD_DEBUG_Full  => logging with full details for developers
 
-    $_WD_DEBUG = $_WD_DEBUG_Error
+    $_WD_DEBUG = $_WD_DEBUG_Info
 EndFunc
 
 Func _SetLocatorStrategy(ByRef $mConfig)
@@ -145,7 +145,7 @@ Func _ResizeBrowser()
 EndFunc
 
 Func _TeardownDriver()
-    If $bAlreadyTeardown Then
+    If $bAlreadyTeardown Or $bNoTeardown Then
         Return
     EndIf
 

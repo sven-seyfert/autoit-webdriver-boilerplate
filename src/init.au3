@@ -1,11 +1,13 @@
 #include-once
 #include <Array.au3>
 #include <File.au3>
+#include <String.au3>
 
 ; few global vars
 Global $mConfig[]
 Global $sSession
 Global $bAlreadyTeardown = False
+Global $bNoTeardown = True
 
 ; core
 #include "..\lib\au3WebDriver\wd_capabilities.au3"
