@@ -22,11 +22,11 @@ Func _Main()
         Exit -1
     EndIf
 
-    _SetGlobalValues($mConfig)
+    _SetGlobalValues()
 
     _GetNewestDriver()            ; get the current webdriver version of the chosen browser
     _SetLogLevel()                ; set log level to error (switch this in the function directly)
-    _SetLocatorStrategy($mConfig) ; set locator strategy to XPath (switch this in the function directly)
+    _SetLocatorStrategy() ; set locator strategy to XPath (switch this in the function directly)
     _SetupDriver()                ; create webdriver session (for chrome, firefox or msedge)
 
     _Steps()                      ; main website steps to automate (website automation flow)
@@ -34,7 +34,7 @@ Func _Main()
     _TeardownDriver()             ; shutdown webdriver (and browser)
 EndFunc
 
-Func _SetGlobalValues(ByRef $mConfig)
+Func _SetGlobalValues()
     $mConfig.Driver            = 'firefox' ; chrome|firefox|msedge
     $mConfig.IsHeadlessMode    = False     ; False|True
     $mConfig.IgnoreSSLAndCerts = False     ; False|True
