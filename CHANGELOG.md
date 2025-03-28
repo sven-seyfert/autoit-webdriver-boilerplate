@@ -11,6 +11,25 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 ## [Unreleased]
 
+## [1.1.0] - 2025-03-28
+
+### Added
+
+- Ability to keep the browser open by no teardown action. [580f9e0](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/580f9e0409c9fe95271c0af17f2fe088d9561ae9)
+
+### Changed
+
+- Extend teardown functionality. [ecfca30](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/ecfca309a7e3da7f7b4fd3638533b27ba54ad0d7)
+- Remove unnecessary ByRef usage because of global map variable. [b66f83f](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/b66f83fb473c7e291e3adec06933f5fd85eebfca)
+
+### Documented
+
+- Update README.md file. [dfac889](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/dfac88968b06dac69c84cb92b94a6a1b10479946)
+
+### Refactored
+
+- Small trivial adjustments. [b4069fc](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/b4069fc7c6efcaf2f46575bb8579cdd97cadf0c4)
+
 ## [1.0.0] - 2025-03-13
 
 ### Added
@@ -202,7 +221,8 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 - Initial commit with all repository data and dependencies.
 
-[Unreleased]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v0.12.0...v1.0.0
 [0.12.0]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v0.11.0...v0.12.0
 [0.11.0]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v0.10.1...v0.11.0
