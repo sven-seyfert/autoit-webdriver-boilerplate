@@ -17,7 +17,7 @@ Func _SetLogLevel()
     $_WD_DEBUG = $_WD_DEBUG_Error
 EndFunc
 
-Func _SetLocatorStrategy(ByRef $mConfig)
+Func _SetLocatorStrategy()
     ; Global constants provided in "wd_core.au3" file.
     ; The following values are provided.
     ; $_WD_LOCATOR_ByCSSSelector     => css selector
