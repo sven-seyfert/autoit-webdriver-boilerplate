@@ -24,14 +24,14 @@ Func _Main()
 
     _SetGlobalValues()
 
-    _GetNewestDriver()            ; get the current webdriver version of the chosen browser
-    _SetLogLevel()                ; set log level to error (switch this in the function directly)
+    _GetNewestDriver()    ; get the current webdriver version of the chosen browser
+    _SetLogLevel()        ; set log level to error (switch this in the function directly)
     _SetLocatorStrategy() ; set locator strategy to XPath (switch this in the function directly)
-    _SetupDriver()                ; create webdriver session (for chrome, firefox or msedge)
+    _SetupDriver()        ; create webdriver session (for chrome, firefox or msedge)
 
-    _Steps()                      ; main website steps to automate (website automation flow)
+    _Steps()              ; main website steps to automate (website automation flow)
 
-    _TeardownDriver()             ; shutdown webdriver (and browser)
+    _TeardownDriver()     ; shutdown webdriver (and browser)
 EndFunc
 
 Func _SetGlobalValues()
