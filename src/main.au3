@@ -49,4 +49,10 @@ Func _SetGlobalValues()
 
     ; Shutdown webdriver on find element error (default is True).
     $mConfig.TeardownOnFindElementError = True
+
+    ; No shutdown of the webdriver on end of the execution (default is False).
+    ; If set to "True", the browser keeps open, but you have to close the
+    ; driver console manually in this case, to shutdown the driver session
+    ; which close the browser.
+    $mConfig.NoTeardownOnEnd = False
 EndFunc

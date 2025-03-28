@@ -15,6 +15,12 @@ Func _SetLogLevel()
     ; $_WD_DEBUG_Full  => logging with full details for developers
 
     $_WD_DEBUG = $_WD_DEBUG_Error
+
+    If $mConfig.NoTeardownOnEnd Then
+        ; Show driver console to have an indicator that
+        ; the driver is still running on end of the execution.
+        $_WD_DEBUG = $_WD_DEBUG_Info
+    EndIf
 EndFunc
 
 Func _SetLocatorStrategy()
@@ -145,6 +151,10 @@ Func _ResizeBrowser()
 EndFunc
 
 Func _TeardownDriver()
+    If $mConfig.NoTeardownOnEnd Then
+        Return
+    EndIf
+
     If $bAlreadyTeardown Then
         Return
     EndIf
