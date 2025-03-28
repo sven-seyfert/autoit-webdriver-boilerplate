@@ -143,7 +143,8 @@ Thank you for your contribution 🤝 .
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/sven-seyfert/autoit-webdriver-boilerplate/blob/main/LICENSE.md) for more information.
+Copyright (c) 2025 Sven Seyfert (SOLVE-SMART)<br>
+Distributed under the MPL-2.0 License. See [LICENSE](https://github.com/sven-seyfert/autoit-webdriver-boilerplate/blob/main/LICENSE.md) for more information.
 
 ## Acknowledgements
 
