@@ -103,7 +103,7 @@ Adjust the `_Steps()` function content in `.\src\website-steps-handler.au3` to y
 Adjust the content/values of function `_SetGlobalValues()` in `.\src\main.au3`.
 
 ``` autoit
-Func _SetGlobalValues(ByRef $mConfig)
+Func _SetGlobalValues()
     $mConfig.Driver            = 'firefox' ; chrome|firefox|msedge
     $mConfig.IsHeadlessMode    = False     ; False|True
     $mConfig.IgnoreSSLAndCerts = False     ; False|True
@@ -118,6 +118,12 @@ Func _SetGlobalValues(ByRef $mConfig)
 
     ; Shutdown webdriver on find element error (default is True).
     $mConfig.TeardownOnFindElementError = True
+
+    ; No shutdown of the webdriver on end of the execution (default is False).
+    ; If set to "True", the browser keeps open, but you have to close the
+    ; driver console manually in this case, to shutdown the driver session
+    ; which close the browser.
+    $mConfig.NoTeardownOnEnd = False
 EndFunc
 ```
 
