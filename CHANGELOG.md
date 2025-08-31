@@ -11,6 +11,24 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 ## [Unreleased]
 
+## [1.2.0] - 2025-08-31
+
+### Changed
+
+- License from MIT to MPLv2. [1870a7f](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/1870a7f9e786e646286c9a4cacd7f6a4ac6d97be)
+- Add example code of how to add a new capability. [7686324](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/768632415b890aa6f0e79c7a9e70d52961ec00d5)
+- Update to au3WebDriver version v1.5.0 including new download location for MSEdge. [f21c38e](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/f21c38e202a5d4d66cc94022b1dac0155b35c554)
+
+### Documented
+
+- Update README.md file. [78c08a2](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/78c08a2f89dc1b1a33050171bdf7dbe29bd22525)
+- Update testing section in README.md file. [c7413f3](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/c7413f31b6a9ba72715bfe9aaf42753ab130ffcc)
+- Readme update (au3WebDriver version). [ba024f9](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/ba024f9a4fc15bb2eb557b54ad4f83ed4d616503)
+
+### Styled
+
+- Trival comment alignment. [e83c76d](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/e83c76de3dc27f438b9bc1d18e63185cfedecddb)
+
 ## [1.1.0] - 2025-03-28
 
 ### Added
@@ -221,7 +239,8 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 - Initial commit with all repository data and dependencies.
 
-[Unreleased]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v0.12.0...v1.0.0
 [0.12.0]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v0.11.0...v0.12.0
