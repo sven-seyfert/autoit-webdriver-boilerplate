@@ -3,5 +3,5 @@ Func _SearchTextareaSelector()
 EndFunc
 
 Func _GoogleSearchButtonSelector()
-    Return '(//input[@role="button" and @value="Google Suche"])[last()]'
+    Return '(//input[@role="button" and @value="Google Suche"])[1]'
 EndFunc
