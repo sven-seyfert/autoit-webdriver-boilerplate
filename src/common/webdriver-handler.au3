@@ -100,6 +100,10 @@ Func _BuildChromeDriverCapabilities()
     _WD_CapabilitiesAdd('args', '--disable-search-engine-choice-screen')
     _WD_CapabilitiesAdd('args', '--disable-blink-features=AutomationControlled')
 
+    ; Example of how to add a new capability:
+    ;~ _WD_CapabilitiesDefine($_WD_KEYS__SPECIFICVENDOR_PRIMITIVE, 'useAutomationExtension')
+    ;~ _WD_CapabilitiesAdd('useAutomationExtension', False)
+
     If $mConfig.IgnoreSSLAndCerts Then
         _WD_CapabilitiesAdd('acceptInsecureCerts', True)                     ; recommended
         _WD_CapabilitiesAdd('args', '--ignore-ssl-errors')                   ; optional
