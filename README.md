@@ -7,7 +7,7 @@
 
 [![license](https://img.shields.io/badge/license-MIT-indianred.svg?style=flat-square&logo=spdx&logoColor=white)](https://github.com/sven-seyfert/autoit-webdriver-boilerplate/blob/main/LICENSE.md)
 [![release](https://img.shields.io/github/release/sven-seyfert/autoit-webdriver-boilerplate.svg?color=slateblue&style=flat-square&logo=github)](https://github.com/sven-seyfert/autoit-webdriver-boilerplate/releases/latest)
-[![au3WebDriver](https://img.shields.io/badge/au3WebDriver-v1.4.0-slateblue.svg?style=flat-square&logo=github&logoColor=white)]()
+[![au3WebDriver](https://img.shields.io/badge/au3WebDriver-v1.5.0-slateblue.svg?style=flat-square&logo=github&logoColor=white)]()
 [![autoit](https://img.shields.io/badge/lang-AutoIt-lightskyblue.svg?style=flat-square&logo=autoit&logoColor=white)]()
 [![last commit](https://img.shields.io/github/last-commit/sven-seyfert/autoit-webdriver-boilerplate.svg?color=darkgoldenrod&style=flat-square&logo=github)](https://github.com/sven-seyfert/autoit-webdriver-boilerplate/commits/main)
 [![contributors](https://img.shields.io/github/contributors/sven-seyfert/autoit-webdriver-boilerplate.svg?color=darkolivegreen&style=flat-square&logo=github)](https://github.com/sven-seyfert/autoit-webdriver-boilerplate/graphs/contributors)
