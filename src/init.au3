@@ -16,14 +16,10 @@ Global $bAlreadyTeardown = False
 #include ".\website-steps-handler.au3"
 
 ; page objects
-#include ".\page-objects\consent-dialog-page.au3"
-#include ".\page-objects\xpath-axes-page.au3"
-#include ".\page-objects\xpath-tutorial-page.au3"
+#include ".\page-objects\your-page-name-page.au3"
 
 ; selectors
-#include ".\selectors\consent-dialog-sel.au3"
-#include ".\selectors\xpath-axes-sel.au3"
-#include ".\selectors\xpath-tutorial-sel.au3"
+#include ".\selectors\your-page-name-sel.au3"
 
 Func _Init()
     If OnAutoItExitRegister('_TeardownDriver') == 0 Then

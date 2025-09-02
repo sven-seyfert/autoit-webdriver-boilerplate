@@ -4,14 +4,14 @@
 Func _Steps()
     _OpenWebsite()
 
-    _ConfirmConsentDialog()
-    _NavigateBetweenPages()
-    _GetTableTexts()
+    ; Your steps/actions here
+    ; ...
+    ; ...
 
     _Print('Automation steps completed!')
     Sleep(1500)
 EndFunc
 
 Func _OpenWebsite()
-    _NavigateTo('https://www.w3schools.com/xml/xpath_intro.asp')
+    _NavigateTo('https://your-url-to-be-automated.com')
 EndFunc
