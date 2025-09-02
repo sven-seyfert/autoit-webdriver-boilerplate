@@ -6,6 +6,7 @@ Func _Steps()
 
     _ConfirmConsentDialog()
     _EnterSearchQuery()
+    MsgBox(48, 'Manual action required', 'Please confirm the captcha dialog and click "OK".', 90)
     _ChooseSpecificMatch()
 
     _Print('Automation steps completed!')
