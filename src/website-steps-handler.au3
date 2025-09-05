@@ -6,7 +6,11 @@ Func _Steps()
 
     _ConfirmConsentDialog()
     _EnterSearchQuery()
-    MsgBox(48, 'Manual action required', 'Please confirm the captcha dialog and click "OK".', 90)
+
+    If StringLower($mConfig.Driver) == 'firefox' Then
+        MsgBox(48 + 262144, 'Manual action required', 'Please confirm the captcha dialog and click "OK".', 90)
+    EndIf
+
     _ChooseSpecificMatch()
 
     _Print('Automation steps completed!')
