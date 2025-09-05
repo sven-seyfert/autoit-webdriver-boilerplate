@@ -11,6 +11,20 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 ## [Unreleased]
 
+## [1.3.0] - 2025-09-05
+
+### Changed
+
+- Base URL to example.com [0f4fd6c](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/0f4fd6c6ec3d3f929298dff42fc8b9be1ab763bd)
+
+### Documented
+
+- Update README.md file. [30ff2eb](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/30ff2eb14274ec0e526aa41b14c394379b0f7849)
+
+### Removed
+
+- Steps actions (content) which has moved to 'get-table-texts' branch. [ad4424e](https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/commit/ad4424ed24310373d4dc84029e4fedc46f77159b)
+
 ## [1.2.0] - 2025-08-31
 
 ### Changed
@@ -239,7 +253,8 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 - Initial commit with all repository data and dependencies.
 
-[Unreleased]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v1.2.0...HEAD
+[Unreleased]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v1.3.0...HEAD
+[1.3.0]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/Sven-Seyfert/autoit-webdriver-boilerplate/compare/v0.12.0...v1.0.0
