@@ -13,5 +13,5 @@ Func _Steps()
 EndFunc
 
 Func _OpenWebsite()
-    _NavigateTo('https://your-url-to-be-automated.com')
+    _NavigateTo('https://example.com')
 EndFunc
