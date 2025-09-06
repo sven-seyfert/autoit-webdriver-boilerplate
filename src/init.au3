@@ -16,10 +16,10 @@ Global $bAlreadyTeardown = False
 #include ".\website-steps-handler.au3"
 
 ; page objects
-#include ".\page-objects\your-page-name-page.au3"
+#include ".\page-objects/login-page.au3"
 
 ; selectors
-#include ".\selectors\your-page-name-sel.au3"
+#include ".\selectors\login-sel.au3"
 
 Func _Init()
     If OnAutoItExitRegister('_TeardownDriver') == 0 Then
