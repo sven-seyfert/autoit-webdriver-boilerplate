@@ -1,7 +1,8 @@
 name: 💬 General Question
 description: Ask a general question or start a discussion about the project.
 title: "[QUESTION]: "
-labels: ["question", "discussion"]
+labels:
+  - "question"
 
 body:
   - type: markdown
