@@ -31,7 +31,7 @@ body:
     id: screenshots
     attributes:
       label: Screenshots
-      description: If applicable, please add screenshots to help explain your problem.
+      description: If applicable, please add screenshots to help explain your request.
     validations:
       required: false
 
