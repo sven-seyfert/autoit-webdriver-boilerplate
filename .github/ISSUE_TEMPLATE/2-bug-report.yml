@@ -3,8 +3,6 @@ description: Report a bug or unexpected behavior to help improve the project.
 title: "[BUG]: "
 labels: ["fix", "triage"]
 
-type: bug
-
 body:
   - type: markdown
     id: introduction
