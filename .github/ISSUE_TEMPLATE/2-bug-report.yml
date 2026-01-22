@@ -33,7 +33,7 @@ body:
       label: Which steps did you take to reproduce the bug?
       description: A clear description of the steps taken to reproduce the buggy behavior.
       placeholder: |
-        If you know the steps, please try to follow the format below and provide steps to reproduce. For example:
+        You know the steps? Please try to follow the format below to provide steps to reproduce.
 
         1. Go to ...
         2. Click on ...
@@ -41,7 +41,7 @@ body:
         4. Do this and that ...
         5. See error
 
-        If you don't know the exact steps, include any relevant details like:
+        You don't know the exact steps? Just include any relevant details like:
 
         - What you were trying to do ...
         - What went wrong ...
@@ -83,7 +83,7 @@ body:
   - type: dropdown
     id: assignee
     attributes:
-      label: Do you want to work on this issue?
+      label: Do you want to work on this issue/fix?
       options:
         - "Maybe"
         - "Yes"
@@ -113,6 +113,8 @@ body:
       label: Any additional context?
       description: Add any other context about the problem or your specific environment here if relevant.
       placeholder: |
+        Examples:
+
         - I am using Browser version ...
         - I am using Go version ...
         - I am using Node.js version ...
