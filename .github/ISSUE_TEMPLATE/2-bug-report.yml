@@ -8,7 +8,7 @@ body:
     id: introduction
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report - it's very appreciated!
+        Thanks for taking the time to fill out this bug report 💛 it's very appreciated!
         Please provide as much detail as possible to help us identify and fix the issue.
 
   - type: textarea
@@ -32,7 +32,7 @@ body:
     attributes:
       label: Which steps did you take to reproduce the bug?
       description: A clear description of the steps taken to reproduce the buggy behavior.
-      value: |
+      placeholder: |
         If you know the steps, please try to follow the format below and provide steps to reproduce. For example:
 
         1. Go to ...
@@ -76,7 +76,7 @@ body:
       label: Older or unknown version?
       description: In case there are no Releases (or TAGs) in the repository yet, please see possible version information within the code base.
       placeholder: |
-        Example: 0.17.1 or 0.5.0 - 2026-01-22
+        Example: "0.17.1" or "0.5.0 - 2026-01-22"
     validations:
       required: false
 
@@ -103,7 +103,7 @@ body:
         - label: Windows 10 (x64)
         - label: Windows 10 (x86)
         - label: other Windows version
-        - label: other OS
+        - label: other operating system
     validations:
         required: true
 
@@ -118,5 +118,10 @@ body:
         - I am using Node.js version ...
         - I am using AutoIt version ...
         - I am using .NET (C#) version ...
-    validations:
       required: false
+
+  - type: markdown
+    id: thanks
+    attributes:
+      value: |
+        Thanks for your effort and interest 🤝 in improving the project.
