@@ -1,0 +1,14 @@
+name: ⭐ Feature Request
+description: Suggest a new feature or improvement to the project.
+title: "[FEATURE]: "
+labels: ["enhancement", "good-first-issue"]
+
+type: feature
+
+body:
+  - type: markdown
+    id: introduction
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this feature request - it's very appreciated!
+        Please provide as much detail as possible to help us understand and potentially implement the feature.
