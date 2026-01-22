@@ -3,6 +3,8 @@ description: Report a bug or unexpected behavior to help improve the project.
 title: "[BUG]: "
 labels: ["fix", "triage"]
 
+type: Bug
+
 body:
   - type: markdown
     id: introduction
@@ -104,7 +106,6 @@ body:
         - label: Windows 10 (x86)
         - label: other Windows version
         - label: other OS
-      multiple: true
     validations:
         required: true
 

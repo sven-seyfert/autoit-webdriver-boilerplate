@@ -3,6 +3,8 @@ description: Suggest a new feature or improvement to the project.
 title: "[FEATURE]: "
 labels: ["enhancement", "good-first-issue"]
 
+type: Feature
+
 body:
   - type: markdown
     id: introduction
