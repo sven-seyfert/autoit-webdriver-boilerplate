@@ -104,7 +104,8 @@ body:
         - label: Windows 10 (x86)
         - label: other Windows version
         - label: other operating system
-          required: true
+    validations:
+      required: true
 
   - type: textarea
     id: extra-info
@@ -124,4 +125,4 @@ body:
     id: thanks
     attributes:
       value: |
-        Thanks for your effort and interest 🤝 in improving the project.
+        Thanks for your effort and interest ✌️ in improving the project.
