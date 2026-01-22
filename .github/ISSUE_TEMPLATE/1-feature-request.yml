@@ -1,7 +1,9 @@
 name: ⭐ Feature Request
 description: Suggest a new feature or improvement to the project.
 title: "[FEATURE]: "
-labels: ["enhancement", "good-first-issue"]
+labels:
+  - "enhancement"
+  - "good first issue"
 
 body:
   - type: markdown
