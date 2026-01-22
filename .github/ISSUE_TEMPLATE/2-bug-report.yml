@@ -104,8 +104,7 @@ body:
         - label: Windows 10 (x86)
         - label: other Windows version
         - label: other operating system
-    validations:
-        required: true
+          required: true
 
   - type: textarea
     id: extra-info
@@ -118,6 +117,7 @@ body:
         - I am using Node.js version ...
         - I am using AutoIt version ...
         - I am using .NET (C#) version ...
+    validations:
       required: false
 
   - type: markdown
